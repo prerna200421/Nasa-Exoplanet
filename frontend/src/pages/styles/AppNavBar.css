@@ -1,0 +1,66 @@
+.navbar {
+    background-color: rgba(0, 0, 0, 0.63);
+    backdrop-filter: blur(5px); /* Add blur effect to the background */
+    transition: background-color 0.3s;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    font-family: "aeonik-bold";
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    color: rgb(203, 203, 203);
+  }
+  
+  .navbar-brand .logo {
+    height: 50px;
+  }
+
+  .navbar-brand{
+    width: fit-content;
+  }
+
+  .navbar-links {
+    flex-shrink: 1;
+    list-style: none;
+    display: flex;
+    gap: 150px;
+  }
+  
+  .navbar-links li {
+    display: inline;
+  }
+  
+  .navbar-links a {
+    color: rgb(176, 176, 176);
+    text-decoration: none;
+    font-weight: bold;
+    position: relative; /* For underline effect */
+  }
+  
+  .navbar-links a:hover {
+    color: #0070f3;
+  }
+  
+  
+  /* Gradient underline effect */
+  .navbar-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Position the underline */
+    height: 3px; /* Height of the underline */
+    width: 100%;
+    background: linear-gradient(to right, #0070f3, #00c6ff); /* Gradient colors */
+    transform: scaleX(0); /* Initial scale to hide the underline */
+    transition: transform 0.3s ease; /* Transition for the scale */
+  }
+  
+  .navbar-links a:hover::after,
+  .navbar-links a.active::after {
+    transform: scaleX(1); /* Scale to full width on hover or active */
+  }
+  

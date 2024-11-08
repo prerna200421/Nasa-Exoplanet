@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "homepage":"https://Ayesha-Muskan-2114.github.io/NASA-Exoplanet",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "mongoose": "^8.7.0"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+}
+}

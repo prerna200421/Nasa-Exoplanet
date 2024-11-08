@@ -1,0 +1,71 @@
+.DrawContainer{
+  font-family: "aeonik";
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+  background-image:url("https://th.bing.com/th/id/R.26f265cc0b5910c40020a3ee27f46380?rik=TYtb0bnfQ6LTCQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-PwtRgPjvSKA%2fUD9do8JlAUI%2fAAAAAAAAIoU%2f1e9O1Ii3WCw%2fs1600%2fOuter%2bSpace%2bWallpapers%2b2.jpg&ehk=ZDg%2bkfiCU1AHZCDdw4AkD4G8pTOceaUYxOIYZKkccvQ%3d&risl=&pid=ImgRaw&r=0")
+}
+
+.DrawContainer canvas{
+  height: 800px;
+  width: 100%;
+}
+
+.DrawContainer h1{
+  line-height: 1em;
+  font-family: "ts block";
+  text-align: center;
+  border-radius: 30px;
+  padding: 20px 50px 0;
+  font-size: 5em;
+  background-color: black;
+  color: rgb(223, 223, 223);
+}
+
+.controls{
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.612);
+  backdrop-filter: blur(10px);
+  display: grid;
+  grid-template-columns: repeat(5, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.control-btn{
+  border: none;
+  font-family: "aeonik";
+  font-size: 1.4em;
+  color: white;
+  background-color: black;
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+.control-btn:hover{
+  background-color: rgb(255, 255, 255);
+  color: black;
+  cursor: pointer;
+}
+
+.selected-btn{
+  border: none;
+  font-family: "aeonik";
+  font-size: 1.4em;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: rgb(81, 81, 236);
+  color: white;
+}
+
+.drawing-container{
+  margin: 0 30px 100px;
+  padding: 30px;
+  border-radius: 50px;
+  background-color: white;
+}

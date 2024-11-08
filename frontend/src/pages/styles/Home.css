@@ -1,0 +1,102 @@
+.tc {
+  min-height: 100vh;
+  padding: 20px;
+  color: aliceblue;
+  text-align: center;
+  margin:0;
+  padding: 0;
+  font-family: "aeonik", sans-serif;
+  background-image: url(https://img.freepik.com/premium-photo/night-sky-stars-galaxies-sky-dusk_494741-58778.jpg);
+}
+
+.tc h1{
+  margin-top: 2em;
+  font-size: 5em;
+}
+
+.tl{
+  padding: 40px;
+}
+
+.card-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.card {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px solid white;
+  overflow: hidden;
+  background-color: #000000;
+  
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px solid white;
+  
+}
+
+.card-content {
+  padding: 15px;
+  border-radius: 20px solid white;
+}
+
+h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.card{
+  transition: transform 0.3s ease;
+  
+}
+
+.card:hover{
+  transform: scale(1.2);
+}
+
+.card-list-wrapper{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.search-container{
+  padding: 1rem;
+}
+
+.searchbar{
+  font-family: 'aeonik';
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  font-size: 2em;
+  background-color: rgb(36, 36, 36);
+  color: white;
+  padding: 20px 1em;
+}
+
+.searchbar:focus{
+  outline: 1px solid rgb(77, 83, 246);
+}
+
+.research-challenge{
+  margin-bottom: 100px;
+}
+
+.research-challenge a{
+  font-size: 1.2em;
+  color: rgb(77, 116, 246);
+}

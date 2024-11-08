@@ -1,0 +1,44 @@
+@font-face{
+  font-family: "aeonik";
+  font-weight: normal;
+  src: url("../public/fonts/AeonikTRIAL-Regular.otf") format("opentype");
+}
+
+@font-face{
+  font-family: "aeonik-bold";
+  font-weight: bold;
+  src: url("../public/fonts/AeonikTRIAL-Bold.otf") format("opentype");
+}
+
+@font-face{
+  font-family: "aeonik-light";
+  src: url("../public/fonts/AeonikTRIAL-Light.otf") format("opentype");
+}
+
+@font-face{
+  font-family: "unison";
+  src: url("../public/fonts/TYPE\ JUICE\ -\ UNISON\ PRO\ BOLD.OTF") format("opentype");
+}
+
+@font-face{
+  font-family: "ts block";
+  src: url("../public/fonts/TS\ BLOCK\ BOLD.TTF") format("truetype");
+}
+
+@font-face{
+  font-family: "helvetica 83";
+  src: url("../public/fonts/Helvetica\ Neue\ LT\ Std\ 83\ Heavy\ Extended.otf") format("opentype");
+}
+
+html, body{
+  font-family: "aeonik", sans-serif;
+  background-color: black;
+  width: 100%;
+  overflow-x: hidden;
+  color: #eaeaea;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+}

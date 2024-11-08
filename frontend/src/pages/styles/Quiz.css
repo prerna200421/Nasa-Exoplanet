@@ -1,0 +1,67 @@
+.quiz-wrapper{
+    
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    background-size: cover;
+    background-image: url("../../../public/images/quizbg.jpg");
+    padding: 30px;
+}
+
+.quiz-card{
+    overflow: hidden;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    justify-items: center;
+    font-family: "aeonik";
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.559);
+    text-align: center;
+    gap: 20px;
+}
+
+.quiz-card h2{
+    margin: 3em 0.3em 0;
+    color: white;
+    font-size: clamp(1em, 10vw, 4em);
+}
+
+.quiz-card ul{
+    justify-items: center;
+    align-items: center;
+    list-style: none;
+    display: grid;
+    gap: clamp(5px, 2.5vw, 20px);
+    margin: 50px 50px 0;
+    padding-inline-start: 0;
+    grid-template-columns: repeat(4, 1fr);
+    color: rgba(255, 255, 255, 0.89);
+}
+
+.quiz-card-option{
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    font-size: clamp(0.5em, 3vw, 1.5em);
+    border-radius: 30px;
+    background-color: rgb(16, 16, 16);
+}
+
+.quiz-card button{
+    border-radius: 100px;
+    border: none;
+    border: 1px solid grey;
+    background-color: black;
+    padding: 20px 50px;
+    font-family: "aeonik";
+    color: rgb(249, 249, 249);
+    font-size: 2em;
+    margin: 1em;
+}
+
+.quiz-card button:hover{
+    cursor: pointer;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.904);
+}

@@ -1,0 +1,207 @@
+/* General Styles */
+
+.container {
+  margin-top: 100px;
+  text-align: center;
+  padding: 50px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #111111, 20%, #000000);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+  font-family: "unison";
+  font-size: 36px;
+  color: #3881ff;
+  text-transform: uppercase;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li:hover {
+  color: #f9aa33;
+}
+
+/* Main Content Section */
+.main-content {
+  margin-top: 60px;
+}
+
+.intro h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #eaeaea;
+  text-transform: uppercase;
+}
+
+.intro p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+}
+
+/* Profiles Section */
+.profiles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+}
+
+.profile {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  width: 20%;
+  text-align: center;
+  margin: 0 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0; /* Start invisible for animation */
+  animation: fadeIn 0.5s forwards; /* Animation for fade in */
+}
+
+.profile:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 4px solid #b0a9a9;
+}
+
+.profile h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.profile p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  to {
+      opacity: 1; /* Fade in to visible */
+  }
+}
+
+/* Timeline Styles */
+.timeline {
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the timeline */
+}
+
+.timeline h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #eaeaea; /* Header color */
+}
+
+.timeline-roadmap {
+  width: 100%; /* Full width for events */
+}
+
+/* Animation for timeline events */
+.timeline-event {
+  background-color: #174dd3;
+  color: #eaeaea;
+  border-radius: 10px;
+  padding: 15px;
+  width: 80%; /* Increase width for better visibility */
+  margin: 10px auto; /* Center events with margin */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0; /* Start invisible for animation */
+  transform: translateY(20px); /* Start position for animation */
+  animation: fadeInUp 0.5s forwards; /* Animation */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  to {
+      opacity: 1; /* Fade in to visible */
+      transform: translateY(0); /* Final position */
+  }
+}
+
+/* Event Date Styles */
+.event-date {
+  font-size: 2em;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+/* Event Description Styles */
+.event-description {
+  padding-top: 15px;
+  color: rgb(214, 214, 214);
+  font-size: 1.2em;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Timeline Event Hover Effect */
+.timeline-event:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Fun Fact Styles */
+.fun-fact {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #f9aa33; /* Change text color for better visibility */
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute; /* Position it over the profile */
+  top: 10px; /* Adjust position */
+  left: 10px;
+  width: 90%; /* Make it responsive */
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profiles {
+      flex-direction: column; /* Stack profiles on small screens */
+  }
+
+  .profile {
+      width: 80%; /* Adjust width for smaller screens */
+      margin: 20px auto; /* Center with margin */
+  }
+
+  .timeline-event {
+      width: 95%; /* Adjust width for timeline events */
+  }
+}
